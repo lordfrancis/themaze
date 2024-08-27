@@ -7,7 +7,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <form>
+    <form id="maze_settings">
         <fieldset>
             <legend>Algorith to use for Maze Creation</legend>
             <div>
@@ -22,18 +22,16 @@
         <fieldset>
             <legend>Algorithm to use for path scanning</legend>
             <div>
-                <input type="radio" id="spanning_tree" name="maze_algo" value="spanning_tree"/>
-                <label for="spanning_tree">Spanning Tree </label>
+                <input type="radio" id="spanning_tree" name="path_algo" value="spanning_tree"/>
+                <label for="spanning_tree">Breadth First Search (BFS)</label>
             </div>
             <div>
-                <input type="radio" id="depth_first_search" name="maze_algo" value="depth_first_search"/>
-                <label for="depth_first_search">Depth First Search</label>
+                <input type="radio" id="depth_first_search" name="path_algo" value="depth_first_search"/>
+                <label for="depth_first_search">Depth First Search (DFS)</label>
             </div>
         </fieldset>
         <input type="submit" value="Generate Maze!">
     </form>
-    
-    
     <canvas class="myCanvas">
         <p> Add a suitable callback.</p>
     </canvas>
